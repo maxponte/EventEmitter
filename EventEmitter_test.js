@@ -58,7 +58,6 @@ var assert = require('assert');
   //Increase max listeners and add the real listener. This will crash if setMaxListeners fails
   e.setMaxListeners(11);
   e.once('live', liveLife);
-  //this should trigger the warning that we are adding more than 10
   e.emit('live');
   e.emit('live');
   e.emit('live');
