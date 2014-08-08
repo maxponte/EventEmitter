@@ -2,7 +2,6 @@
   'use strict';
 
   function EventEmitter() {
-    console.log('this gets run');
     this._events = {};
     this._maxListeners = 10;
   }
